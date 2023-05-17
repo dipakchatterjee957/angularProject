@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MyContainerComponent } from './myContainer/myContainer.component';
 import { TopNavComponent } from './myContainer/top-nav/top-nav.component';
 import { DatabindComponent } from './dataBind/databind.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DatabindComponent } from './dataBind/databind.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,34 @@
 string Interpolation data binding. Data flow TS file -> HTML file
-<p>My name {{name.toUpperCase()}} age  {{age}} {{myMethod()}}</p>
+<p>My name {{ name.toUpperCase() }} age {{ age }} {{ myMethod() }}</p>
+
+<br />
+
+Property binding data binding. Data flow TS file -> HTML file
+<input type="text" [value]="name" style="display: block" />
+
+<br /><br />
+
+style and class binding.Data flow TS file -> HTML file
+<div style="display: flex;">
+  <div class="box" [class.myclass]="myPropaty"></div>
+  <div class="box" [style.margin]="myStyle"></div>
+  <div class="box" [ngClass]="multiClass"></div>
+  <div class="box" [ngStyle]="multiStyle"></div>
+</div>
+
+Event Binding. Data flow HTML file -> TS file
+<br>
+<button (click)="showHide()"> Show Message </button>
+<h5>{{message}}</h5>
 
 <br>
 
-Property binding data binding. Data flow TS file -> HTML file
-<input type="text"  [value]="name" style="display: block">
+Template Reference.
+<input type="text" value="abc" #inputInfo>
+<button (click)="getInputInfo(inputInfo)">Get Info</button>
 
 <br><br>
 
-style and class binding.
-<div class="box"></div>
+Two way data binding.
+<input type="text" value="ABC" [(ngModel)]="msg" >
+<p>{{msg}}</p>
