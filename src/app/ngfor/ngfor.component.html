@@ -1,6 +1,13 @@
+
+<div style="margin: 15px;display: flex;flex-direction: row;justify-content: space-evenly;">
+    <input type="text" value="" placeholder="Product Id" #pId>
+    <input type="text" value="" placeholder="Product Name" #pName>
+    <input type="text" value="" placeholder="Product Price" #price>
+    <button class="btn btn-success" (click)="addData(pId,pName,price)">Add Data</button>
+</div>
 <div class="container">
     <table class="table">
-        <thead class="thead-dar">
+        <thead class="thead-dark">
             <tr>
                 <th>SL. No</th>
                 <th>Product ID</th>
@@ -15,7 +22,7 @@
                 <td>{{item.pId}}</td>
                 <td>{{item.pName}}</td>
                 <td>{{item.price}}</td>
-                <td><i class="bi bi-trash"></i></td>
+                <td><i class="bi bi-trash" (click)="deleteItem(i)"></i></td>
             </tr>
         </tbody>
     </table>

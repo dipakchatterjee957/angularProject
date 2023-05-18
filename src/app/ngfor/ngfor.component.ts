@@ -12,16 +12,23 @@ export class NgforComponent {
       pId: '1001',
       pName: 'TV',
       price: '15000'
-    },
-    {
-      pId: '2002',
-      pName: 'Mobile',
-      price: '40000'
-    },
-    {
-      pId: '3002',
-      pName: 'Laptop',
-      price: '70000'
-    },
-  ]
+    }
+  ];
+
+  addData(pId:any,pName:any,price:any){
+    this.products.push(
+      {
+        pId: pId.value,
+        pName: pName.value,
+        price: price.value
+      }
+    );
+    pId.value ='';
+    pName.value=''; 
+    price.value='';
+  };
+
+  deleteItem(index:number){
+    this.products.splice(index,1)
+  }
 }
