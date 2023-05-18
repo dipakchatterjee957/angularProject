@@ -1,0 +1,22 @@
+<div class="container">
+    <button class="btn btn-success" (click)="create()">Create Block</button>
+    <br>
+    <!-- We can Use both way -->
+    <!-- scenario 1  -->
+    <!-- <div *ngIf="isValid; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock>
+        Then Block Show
+    </ng-template>
+
+    <ng-template #elseBlock>
+        Else Block Show
+    </ng-template> -->
+
+    <!-- scenario 2 -->
+    <div *ngIf="isValid; else elseBlock">Then Block Show</div>
+
+    <ng-template #elseBlock>
+        Else Block Show
+    </ng-template>
+    
+</div>

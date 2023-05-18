@@ -1,0 +1,16 @@
+<div class="container my-4">
+
+    <div class="col-md-4">
+        <select class="form-control" (change)="selectDropDown($event)">
+            <option value="">-- Please Select --</option>
+            <option value="Arambagh">Arambagh</option>
+            <option value="Kolakata">Kolakata</option>
+        </select>
+    </div>
+    
+    <div class="col-md-6" [ngSwitch]="selectedValue">
+        <h3 *ngSwitchDefault="">-- Please Select --</h3>
+        <h3 *ngSwitchCase="'Arambagh'">Arambagh</h3>
+        <h3 *ngSwitchCase="'Kolakata'">Kolakata</h3>
+    </div>
+</div>
