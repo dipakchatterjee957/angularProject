@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
+import { LoginComponent } from './login/login.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NgforComponent } from './ngfor/ngfor.component';
     DatabindComponent,
     NgifComponent,
     NgswitchComponent,
-    NgforComponent
+    NgforComponent,
+    LoginComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

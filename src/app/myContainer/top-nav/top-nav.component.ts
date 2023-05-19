@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TopNavComponent {
 
+  pathArr = [
+    {routerPath: '/dataBind', pathName: 'DataBind'},
+    {routerPath: '/ngIf', pathName: 'ng-If'},
+    {routerPath: '/ngSwitch', pathName: 'ng-Switch'},
+    {routerPath: '/ngFor', pathName: 'ng-For'},
+  ]
 }
