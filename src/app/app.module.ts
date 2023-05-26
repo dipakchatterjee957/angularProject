@@ -12,6 +12,10 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { NgContentComponent } from './content/ng-content/ng-content.component';
+import { CardComponent } from './content/card/card.component';
+import { ParentComponent } from './inputOutput/parent/parent.component';
+import { ChildComponent } from './inputOutput/child/child.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +28,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     NgforComponent,
     LoginComponent,
     PagenotfoundComponent,
+    NgContentComponent,
+    CardComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,

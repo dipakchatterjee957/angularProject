@@ -1,0 +1,10 @@
+<br>
+<h2>Child Component</h2>
+
+<input type="text" placeholder="{{ placeholderText }}" value="" />
+
+<div class="col-md-12 bg-success text-center text-white my-2 py-4">
+  <h2 *ngIf="!productSelected">Please Select product</h2>
+  <h2 *ngIf="productSelected">{{ productName }} is selected</h2>
+  <button class="btn btn-danger" (click)="onAddtoCart()">Add to cart</button>
+</div>

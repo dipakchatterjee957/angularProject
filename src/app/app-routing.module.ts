@@ -6,6 +6,8 @@ import { NgswitchComponent } from './ngswitch/ngswitch.component';
 import { NgforComponent } from './ngfor/ngfor.component';
 import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { NgContentComponent } from './content/ng-content/ng-content.component';
+import { ParentComponent } from './inputOutput/parent/parent.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path:'ngIf',component: NgifComponent},
   {path:'ngSwitch',component: NgswitchComponent},
   {path:'ngFor',component: NgforComponent},
+  {path:'ngContent',component: NgContentComponent},
+  {path:'inputOutput',component: ParentComponent},
   {path:'**',component:PagenotfoundComponent}
 ];
 

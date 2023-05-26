@@ -1,0 +1,39 @@
+<h1>Parent Component</h1>
+<div class="alert alert-success border d-flex " *ngIf="outputAddedProduct">
+    <strong>{{output.outputAddedProductName}} </strong> &nbsp; is added to cart
+    <button class="btn btn-primary ml-auto mx-2">checkout</button>
+</div>
+
+<div class="page-area">
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Laptop</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+                    <button  class="btn btn-success" (click)="onselectProduct('Laptop')">Select this peoduct</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Mobile</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+                    <button  class="btn btn-success" (click)="onselectProduct('Mobile')">Select this peoduct</button>
+                </div>
+            </div>
+        </div>   
+
+        <app-child class="w-100" 
+        [placeholderText]="'chaan'"
+        [productSelected]="inputPropartyProductSelected"
+        [productName]="inputPropartyProductName"
+        (addedProduct)="getaddedProduct($event)"
+        (addedProductName)="getaddedProductName($event)"
+        ></app-child>
+        
+    </div>
+</div>
