@@ -16,6 +16,10 @@ import { NgContentComponent } from './content/ng-content/ng-content.component';
 import { CardComponent } from './content/card/card.component';
 import { ParentComponent } from './inputOutput/parent/parent.component';
 import { ChildComponent } from './inputOutput/child/child.component';
+import { SubjectComponent } from './subject/subject.component';
+import { Comp1Component } from './component/comp1/comp1.component';
+import { Comp2Component } from './component/comp2/comp2.component';
+import { UtilityService } from './appService/utility.service';
 
 @NgModule({
   declarations: [
@@ -32,13 +36,16 @@ import { ChildComponent } from './inputOutput/child/child.component';
     CardComponent,
     ParentComponent,
     ChildComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [UtilityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

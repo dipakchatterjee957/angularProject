@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { NgContentComponent } from './content/ng-content/ng-content.component';
 import { ParentComponent } from './inputOutput/parent/parent.component';
+import { SubjectComponent } from './subject/subject.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'ngFor',component: NgforComponent},
   {path:'ngContent',component: NgContentComponent},
   {path:'inputOutput',component: ParentComponent},
+  {path:'subject',component: SubjectComponent},
   {path:'**',component:PagenotfoundComponent}
 ];
 

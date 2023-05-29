@@ -14,5 +14,6 @@ export class TopNavComponent {
     {routerPath: '/ngFor', pathName: 'ng-For'},
     {routerPath: '/ngContent', pathName: 'ng-Content'},
     {routerPath: '/inputOutput', pathName: 'input-output'},
+    {routerPath: '/subject', pathName: 'subject'},
   ]
 }
