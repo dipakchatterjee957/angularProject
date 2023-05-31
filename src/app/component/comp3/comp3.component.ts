@@ -11,7 +11,7 @@ export class Comp3Component implements AfterViewInit, AfterContentInit {
   @ViewChild('childBox') childBox: ElementRef;
   @Input() text: string;
   productName: string = 'TV';
-  @ContentChild('childContent') childParagraph: ElementRef;
+  @ContentChild('childContent') childParagraph: ElementRef; // access child ng-content which is comming from parent
   @ViewChild(TestdirectiveDirective) testdirective: TestdirectiveDirective
 
   constructor(private renderer: Renderer2) { }
@@ -34,6 +34,7 @@ export class Comp3Component implements AfterViewInit, AfterContentInit {
     this.renderer.appendChild(this.childParagraph.nativeElement, text)
   }
 
+  // change background color using directive
   changeBGColor(color: string) {
     this.testdirective.changeBackground(color);
   }
