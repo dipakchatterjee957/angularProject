@@ -20,6 +20,10 @@ import { SubjectComponent } from './subject/subject.component';
 import { Comp1Component } from './component/comp1/comp1.component';
 import { Comp2Component } from './component/comp2/comp2.component';
 import { UtilityService } from './appService/utility.service';
+import { ViewchildComponent } from './viewchild/viewchild.component';
+import { Comp3Component } from './component/comp3/comp3.component';
+import { TestdirectiveDirective } from './appDirective/testdirective.directive';
+// import { Comp3Component } from './viewchild/comp3/comp3.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,9 @@ import { UtilityService } from './appService/utility.service';
     SubjectComponent,
     Comp1Component,
     Comp2Component,
+    ViewchildComponent,
+    Comp3Component,
+    TestdirectiveDirective,
   ],
   imports: [
     BrowserModule,
