@@ -3,9 +3,13 @@
     <div class="card-body">
         <h5 class="card-title">{{productName}}</h5>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
-        <button class="btn btn-success" (click)="alertProductname()">Alert product name</button>
+        <button class="btn btn-success" (click)="alertProductname()">Alert product name</button> &nbsp;
+        <button class="btn btn-success" (click)="addContentChild()">Add message ng-content</button>
         <br> <br>
-        <ng-content></ng-content>
+        <div style="border: 1px solid black;">
+            This is ng-content comming from parent
+            <ng-content></ng-content>
+        </div>
 
         <p>Name is <strong> {{text}}</strong></p>
     </div>

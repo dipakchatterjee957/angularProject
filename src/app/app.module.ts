@@ -23,6 +23,8 @@ import { UtilityService } from './appService/utility.service';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { Comp3Component } from './component/comp3/comp3.component';
 import { TestdirectiveDirective } from './appDirective/testdirective.directive';
+import { HostlistenerComponent } from './hostlistener/hostlistener.component';
+import { HostlistenerDirective } from './appDirective/hostlistener.directive';
 // import { Comp3Component } from './viewchild/comp3/comp3.component';
 
 @NgModule({
@@ -46,6 +48,8 @@ import { TestdirectiveDirective } from './appDirective/testdirective.directive';
     ViewchildComponent,
     Comp3Component,
     TestdirectiveDirective,
+    HostlistenerComponent,
+    HostlistenerDirective,
   ],
   imports: [
     BrowserModule,

@@ -27,6 +27,9 @@ export class Comp3Component implements AfterViewInit, AfterContentInit {
 
   alertProductname() {
     alert(this.productName);
+  }
+
+  addContentChild(){
     let text = this.renderer.createText('What is your name?');
     this.renderer.appendChild(this.childParagraph.nativeElement, text)
   }

@@ -16,5 +16,6 @@ export class TopNavComponent {
     { routerPath: '/inputOutput', pathName: 'input-output' },
     { routerPath: '/subject', pathName: 'subject' },
     { routerPath: '/viewChild', pathName: 'view-Child' },
+    { routerPath: '/hostListener', pathName: 'HostListener' },
   ]
 }

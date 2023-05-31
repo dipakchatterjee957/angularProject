@@ -10,6 +10,7 @@ import { NgContentComponent } from './content/ng-content/ng-content.component';
 import { ParentComponent } from './inputOutput/parent/parent.component';
 import { SubjectComponent } from './subject/subject.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
+import { HostlistenerComponent } from './hostlistener/hostlistener.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'inputOutput', component: ParentComponent },
   { path: 'subject', component: SubjectComponent },
   { path: 'viewChild', component: ViewchildComponent },
+  { path: 'hostListener', component: HostlistenerComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
