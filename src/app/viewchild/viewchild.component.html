@@ -1,0 +1,31 @@
+<h1>Parent Component</h1>
+
+
+<div class="page-area">
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="card" #parentBox>
+                <div class="card-body">
+                    <h5 class="card-title">Laptop</h5>
+                    <p class="card-text">We can modify dom. Also access child component function, property and other</p>
+                    <button class="btn btn-success" title="Call the function from Child"
+                        (click)="changeChildComponentProductName()">Change product name</button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-success" title="Call the function from Child"
+                        (click)="alertChildComponentProductName()">Alert product name</button>
+                    &nbsp;&nbsp;
+                    <button class="btn btn-success" title="Input Decoretor" (click)="inputChangeName()">Change
+                        name</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <app-comp3 [text]="name">
+                <p #childContent>child paragraph: </p>
+            </app-comp3>
+        </div>
+
+    </div>
+</div>

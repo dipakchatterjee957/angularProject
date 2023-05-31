@@ -9,18 +9,20 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { NgContentComponent } from './content/ng-content/ng-content.component';
 import { ParentComponent } from './inputOutput/parent/parent.component';
 import { SubjectComponent } from './subject/subject.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'login', pathMatch:'full'},
-  {path:'login',component: LoginComponent},
-  {path:'dataBind',component: DatabindComponent},
-  {path:'ngIf',component: NgifComponent},
-  {path:'ngSwitch',component: NgswitchComponent},
-  {path:'ngFor',component: NgforComponent},
-  {path:'ngContent',component: NgContentComponent},
-  {path:'inputOutput',component: ParentComponent},
-  {path:'subject',component: SubjectComponent},
-  {path:'**',component:PagenotfoundComponent}
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'dataBind', component: DatabindComponent },
+  { path: 'ngIf', component: NgifComponent },
+  { path: 'ngSwitch', component: NgswitchComponent },
+  { path: 'ngFor', component: NgforComponent },
+  { path: 'ngContent', component: NgContentComponent },
+  { path: 'inputOutput', component: ParentComponent },
+  { path: 'subject', component: SubjectComponent },
+  { path: 'viewChild', component: ViewchildComponent },
+  { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({

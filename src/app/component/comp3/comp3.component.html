@@ -1,0 +1,22 @@
+<h2>Child Component</h2>
+<div class="card" #childBox>
+    <div class="card-body">
+        <h5 class="card-title">{{productName}}</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+        <button class="btn btn-success" (click)="alertProductname()">Alert product name</button>
+        <br> <br>
+        <ng-content></ng-content>
+
+        <p>Name is <strong> {{text}}</strong></p>
+    </div>
+</div>
+
+<br>
+
+<div class="card" appTestdirective>
+    <div class="card-body">
+        <h5 class="card-title">Card Title</h5>
+        <button class="btn btn-success" (click)="changeBGColor('red')">Red</button> &nbsp;&nbsp;
+        <button class="btn btn-success" (click)="changeBGColor('skyblue')">Blue</button>
+    </div>
+</div>
