@@ -25,7 +25,9 @@ import { Comp3Component } from './component/comp3/comp3.component';
 import { TestdirectiveDirective } from './appDirective/testdirective.directive';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
 import { HostlistenerDirective } from './appDirective/hostlistener.directive';
-// import { Comp3Component } from './viewchild/comp3/comp3.component';
+import { CustomPipe } from './appPipes/custom.pipe';
+import { PipeComponent } from './pipe/pipe.component';
+import { FilterPipe } from './appPipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,9 @@ import { HostlistenerDirective } from './appDirective/hostlistener.directive';
     TestdirectiveDirective,
     HostlistenerComponent,
     HostlistenerDirective,
+    CustomPipe,
+    PipeComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

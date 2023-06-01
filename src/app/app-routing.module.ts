@@ -11,6 +11,7 @@ import { ParentComponent } from './inputOutput/parent/parent.component';
 import { SubjectComponent } from './subject/subject.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
+import { PipeComponent } from './pipe/pipe.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'subject', component: SubjectComponent },
   { path: 'viewChild', component: ViewchildComponent },
   { path: 'hostListener', component: HostlistenerComponent },
+  { path: 'pipe', component: PipeComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 

@@ -10,7 +10,7 @@ export class ViewchildComponent implements AfterViewInit {
 
   name: string = 'sumit';
   @ViewChild('parentBox') parentBox: ElementRef;
-  @ViewChild(Comp3Component) childComponent: Comp3Component; // using tis we can access the whole child component
+  @ViewChild(Comp3Component) childComponent: Comp3Component; // using this we can access the whole child component
 
   ngAfterViewInit(): void {
     // using this we can change the color of the div tag

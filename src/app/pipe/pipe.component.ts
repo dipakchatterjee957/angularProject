@@ -1,0 +1,31 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-pipe',
+  templateUrl: './pipe.component.html',
+  styleUrls: ['./pipe.component.css']
+})
+export class PipeComponent {
+
+  text1:string = 'Lorem, ipsum dolor sit ';
+  text2:string = 'Ram Das ';
+  nameSearch:string;
+  
+  products = [
+    {
+      pId: '1001',
+      pName: 'TV',
+      price: '15000'
+    },
+    {
+      pId: '1002',
+      pName: 'dee',
+      price: '543245'
+    },
+    {
+      pId: '1003',
+      pName: 'yyyy',
+      price: '445'
+    }
+  ];
+}
