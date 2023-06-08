@@ -13,19 +13,31 @@ export class PipeComponent {
   
   products = [
     {
-      pId: '1001',
+      pId: 1001,
       pName: 'TV',
       price: '15000'
     },
     {
-      pId: '1002',
+      pId: 1002,
       pName: 'dee',
       price: '543245'
     },
     {
-      pId: '1003',
+      pId: 1003,
       pName: 'yyyy',
       price: '445'
     }
   ];
+  addData(pId:any,pName:any,price:any){
+    this.products.push(
+      {
+        pId: pId.value,
+        pName: pName.value,
+        price: price.value
+      }
+    );
+    pId.value ='';
+    pName.value=''; 
+    price.value='';
+  };
 }

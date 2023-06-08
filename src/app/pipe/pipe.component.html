@@ -11,6 +11,12 @@
 
 
 <div class="container">
+    <div style="margin: 15px;display: flex;flex-direction: row;justify-content: space-evenly;">
+        <input type="number" value="" placeholder="Product Id" #pId>
+        <input type="text" value="" placeholder="Product Name" #pName>
+        <input type="text" value="" placeholder="Product Price" #price>
+        <button class="btn btn-success" (click)="addData(pId,pName,price)">Add Data</button>
+    </div>
     <input class="form-control" type="search" id="search" placeholder="Search Product" [(ngModel)] = "nameSearch">
     <table class="table">
         <thead class="thead-dark">
@@ -19,16 +25,14 @@
                 <th>Product ID</th>
                 <th>Name</th>
                 <th>Price</th>
-                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of products | filter:nameSearch; index as i">
+            <tr *ngFor="let item of products | filter:nameSearch : ['pName','pId']; index as i">
                 <td>{{i+1}}</td>
                 <td>{{item.pId}}</td>
                 <td>{{item.pName}}</td>
                 <td>{{item.price}}</td>
-                <td><i class="bi bi-trash" ></i></td>
             </tr>
         </tbody>
     </table>
