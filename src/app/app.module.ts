@@ -17,20 +17,18 @@ import { CardComponent } from './content/card/card.component';
 import { ParentComponent } from './inputOutput/parent/parent.component';
 import { ChildComponent } from './inputOutput/child/child.component';
 import { SubjectComponent } from './subject/subject.component';
-import { Comp1Component } from './component/comp1/comp1.component';
-import { Comp2Component } from './component/comp2/comp2.component';
 import { UtilityService } from './appService/utility.service';
 import { ViewchildComponent } from './viewchild/viewchild.component';
-import { Comp3Component } from './component/comp3/comp3.component';
-import { TestdirectiveDirective } from './appDirective/testdirective.directive';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
-import { HostlistenerDirective } from './appDirective/hostlistener.directive';
 import { CustomPipe } from './appPipes/custom.pipe';
 import { PipeComponent } from './pipe/pipe.component';
 import { FilterPipe } from './appPipes/filter.pipe';
+import { DirectiveModule } from './appDirective/directive.module';
+import { SharedComponentModule } from './component/shared-component.module';
 
 @NgModule({
   declarations: [
+    // We declare here components, Directives, and pipes in declarations
     AppComponent,
     MyContainerComponent,
     TopNavComponent,
@@ -45,23 +43,21 @@ import { FilterPipe } from './appPipes/filter.pipe';
     ParentComponent,
     ChildComponent,
     SubjectComponent,
-    Comp1Component,
-    Comp2Component,
     ViewchildComponent,
-    Comp3Component,
-    TestdirectiveDirective,
     HostlistenerComponent,
-    HostlistenerDirective,
     CustomPipe,
     PipeComponent,
     FilterPipe,
   ],
   imports: [
+    // other module which is used in the app, featured module
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    DirectiveModule,
+    SharedComponentModule
   ],
-  providers: [UtilityService],
+  providers: [UtilityService],// declare services in providers
   bootstrap: [AppComponent]
 })
 export class AppModule { }
