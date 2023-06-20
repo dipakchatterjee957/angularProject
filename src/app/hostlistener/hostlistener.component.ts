@@ -7,12 +7,14 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HostlistenerComponent {
 
+  constructor() { console.log('HostlistenerComponent loaded') }
+
   // @HostListener('click') myClick(){
   //   alert('hostlistener')
   // }
- 
+
   // Using HostListener the scroll event is only working on this page.
-  @HostListener('window:scroll',['$event']) myScroll(){
+  @HostListener('window:scroll', ['$event']) myScroll() {
     console.log('scrolling')
   }
 }

@@ -7,10 +7,12 @@ import { UtilityService } from '../appService/utility.service';
   styleUrls: ['./subject.component.css']
 })
 export class SubjectComponent {
-  UserName:string;
+  UserName: string;
 
-  constructor(public _utility: UtilityService){
-    this._utility.userName.subscribe((value:string) =>{
+  constructor(public _utility: UtilityService) {
+    console.log('SubjectComponent loaded')
+
+    this._utility.userName.subscribe((value: string) => {
       this.UserName = value;
     })
   }

@@ -25,7 +25,6 @@ import { PipeComponent } from './pipe/pipe.component';
 import { FilterPipe } from './appPipes/filter.pipe';
 import { DirectiveModule } from './appDirective/directive.module';
 import { SharedComponentModule } from './component/shared-component.module';
-
 @NgModule({
   declarations: [
     // We declare here components, Directives, and pipes in declarations
@@ -60,4 +59,6 @@ import { SharedComponentModule } from './component/shared-component.module';
   providers: [UtilityService],// declare services in providers
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() { console.log('AppModule loaded') }
+}

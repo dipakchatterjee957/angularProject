@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class PipeComponent {
 
-  text1:string = 'Lorem, ipsum dolor sit ';
-  text2:string = 'Ram Das ';
-  nameSearch:string;
-  
+  constructor() { console.log('PipeComponent loaded') }
+
+  text1: string = 'Lorem, ipsum dolor sit ';
+  text2: string = 'Ram Das ';
+  nameSearch: string;
+
   products = [
     {
       pId: 1001,
@@ -28,7 +30,7 @@ export class PipeComponent {
       price: '445'
     }
   ];
-  addData(pId:any,pName:any,price:any){
+  addData(pId: any, pName: any, price: any) {
     this.products.push(
       {
         pId: pId.value,
@@ -36,8 +38,8 @@ export class PipeComponent {
         price: price.value
       }
     );
-    pId.value ='';
-    pName.value=''; 
-    price.value='';
+    pId.value = '';
+    pName.value = '';
+    price.value = '';
   };
 }

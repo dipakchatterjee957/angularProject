@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { DatabindComponent } from './dataBind/databind.component';
 import { NgifComponent } from './ngif/ngif.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
@@ -12,6 +12,7 @@ import { SubjectComponent } from './subject/subject.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { HostlistenerComponent } from './hostlistener/hostlistener.component';
 import { PipeComponent } from './pipe/pipe.component';
+import { CustomPreloadingService } from './appService/custom-preloading.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -26,11 +27,20 @@ const routes: Routes = [
   { path: 'viewChild', component: ViewchildComponent },
   { path: 'hostListener', component: HostlistenerComponent },
   { path: 'pipe', component: PipeComponent },
+  { path: 'loader', data: { preload: true }, loadChildren: () => import('./loader/pages.module').then(m => m.PagesModule) },
   { path: '**', component: PagenotfoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes
+
+    // This is used for pre-loading the all modules
+    // ,{ preloadingStrategy: PreloadAllModules }
+
+    // this for custom pre-loading. which module we want to pre-load add 'data' object in 'routes' array.
+    // In 'data' object make a varible as your choise just like 'preload' and make it 'true' to apply pre-loading
+    , { preloadingStrategy: CustomPreloadingService }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

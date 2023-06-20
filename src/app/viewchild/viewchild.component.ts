@@ -8,6 +8,8 @@ import { Comp3Component } from '../component/comp3/comp3.component';
 })
 export class ViewchildComponent implements AfterViewInit {
 
+  constructor() { console.log('ViewchildComponent loaded') }
+
   name: string = 'sumit';
   @ViewChild('parentBox') parentBox: ElementRef;
   @ViewChild(Comp3Component) childComponent: Comp3Component; // using this we can access the whole child component
