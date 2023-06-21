@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./top-nav.component.css']
 })
 export class TopNavComponent {
+  dropdownName: string = 'Select Page';
 
   pathArr = [
     { routerPath: '/dataBind', pathName: 'DataBind' },
@@ -19,5 +20,6 @@ export class TopNavComponent {
     { routerPath: '/hostListener', pathName: 'HostListener' },
     { routerPath: '/pipe', pathName: 'Pipe' },
     { routerPath: '/loader', pathName: 'Loader' },
-  ]
+  ];
+
 }

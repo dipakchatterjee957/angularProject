@@ -38,7 +38,8 @@ const routes: Routes = [
     // ,{ preloadingStrategy: PreloadAllModules }
 
     // this for custom pre-loading. which module we want to pre-load add 'data' object in 'routes' array.
-    // In 'data' object make a varible as your choise just like 'preload' and make it 'true' to apply pre-loading
+    // In 'data' object make a varible as your choise just like 'preload' and make it 'true' to apply pre-loading.
+    // using 'preload' true we apply pre-loading in the 'PagesModule'
     , { preloadingStrategy: CustomPreloadingService }
   )],
   exports: [RouterModule]
