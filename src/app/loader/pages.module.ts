@@ -4,12 +4,12 @@ import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { RouterModule, Routes } from '@angular/router';
-import { PipeComponent } from '../pipe/pipe.component';
 
 const pageRoutes: Routes = [
   {
     path: '', component: Page1Component, children: [
-      { path: 'page2', component: Page2Component },
+      // ':id' is used for router params
+      { path: 'page2/:id', component: Page2Component },
       { path: 'page3', component: Page3Component }
     ]
   }
