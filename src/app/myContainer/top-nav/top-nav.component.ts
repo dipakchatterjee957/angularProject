@@ -22,4 +22,8 @@ export class TopNavComponent {
     { routerPath: '/loader', pathName: 'Loader' },
   ];
 
+  pathArrRxjs = [
+    { routerPath: '/rxjs', pathName: 'RxJs' },
+  ]
+
 }

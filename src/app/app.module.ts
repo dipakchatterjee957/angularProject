@@ -46,7 +46,7 @@ import { SharedComponentModule } from './component/shared-component.module';
     HostlistenerComponent,
     CustomPipe,
     PipeComponent,
-    FilterPipe,
+    FilterPipe
   ],
   imports: [
     // other module which is used in the app, featured module

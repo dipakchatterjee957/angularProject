@@ -28,6 +28,7 @@ const routes: Routes = [
   { path: 'hostListener', component: HostlistenerComponent },
   { path: 'pipe', component: PipeComponent },
   { path: 'loader', data: { preload: true }, loadChildren: () => import('./loader/pages.module').then(m => m.PagesModule) },
+  { path: 'rxjs', data: { preload: true }, loadChildren: () => import('./rxjs/rxjs.module').then(m => m.RxjsModule) },
   { path: '**', component: PagenotfoundComponent }
 ];
 
