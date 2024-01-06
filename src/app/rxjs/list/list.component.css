@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+   
+    flex-flow: row wrap;
+    
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: rgb(71, 166, 255);
+    padding: 5px;
+    width: 150px;
+    height: 96px;
+    margin-top: 10px;
+    line-height: 85px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none !important;
+    color: #040404 !important;
+  }

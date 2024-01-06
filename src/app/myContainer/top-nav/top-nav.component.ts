@@ -20,10 +20,11 @@ export class TopNavComponent {
     { routerPath: '/hostListener', pathName: 'HostListener' },
     { routerPath: '/pipe', pathName: 'Pipe' },
     { routerPath: '/loader', pathName: 'Loader' },
+    { routerPath: '/rxjs', pathName: 'RxJs' },
   ];
 
   pathArrRxjs = [
-    { routerPath: '/rxjs', pathName: 'RxJs' },
+
   ]
 
 }
