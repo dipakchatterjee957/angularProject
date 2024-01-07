@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent {
+  pathArr = [
+    { routerPath: 'promise', pathName: 'Promise' },
+    { routerPath: 'fromEvent', pathName: 'From Event' },
+    { routerPath: 'intervalTimer', pathName: 'Interval & Timer' },
+    { routerPath: 'ofFrom', pathName: 'Of & From' },
 
+  ]
 }

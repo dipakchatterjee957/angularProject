@@ -13,4 +13,11 @@ export class UtilityService {
   //  when we subscribe it in other component this value is initialize.
   // userName = new Subject<string>();
   userName = new BehaviorSubject<string>('Sudip');
+
+  // This function is used for RxJs part, to add <li> element
+  addListItem(val: string, containerId: string) {
+    let el = document.createElement('li');
+    el.innerText = val;
+    document.getElementById(containerId)?.appendChild(el)
+  }
 }
