@@ -15,7 +15,7 @@ export class UtilityService {
   userName = new BehaviorSubject<string>('Sudip');
 
   // This function is used for RxJs part, to add <li> element
-  addListItem(val: string, containerId: string) {
+  addListItem(val: string | any, containerId: string) {
     let el = document.createElement('li');
     el.innerText = val;
     document.getElementById(containerId)?.appendChild(el)

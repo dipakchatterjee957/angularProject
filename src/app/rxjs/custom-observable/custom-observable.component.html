@@ -1,0 +1,33 @@
+<h3>Custom Observable</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <strong>Ex - 1 (Manual)</strong>
+        <hr>
+        <ul [ngClass]="techStatus1 == 'completed' ? 'completed' : techStatus1 == 'error' ? 'error' : '' "
+            class="techList" id="container1"></ul>
+    </div>
+
+    <div class="col-md-6">
+        <strong>Ex - 2 (Custom Interval Observable)</strong>
+        <hr>
+        <ul [ngClass]="techStatus2 == 'completed' ? 'completed' : techStatus2 == 'error' ? 'error' : '' "
+            class="techList" id="container2"></ul>
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <strong>Ex - 3 </strong>
+    <div class="col-md-12">
+        <p class="border rounded text-white bg-secondary p-2"><strong>Random Names:</strong> From(['Ram', 'Sam', 'Mina',
+            'Rohit', 'Amina'])</p>
+        <hr>
+        <p>Current Name: <strong class="text-success">{{names}}</strong></p>
+        <button
+            [ngClass]="nameStatus == 'completed' ? 'btn-success' : nameStatus == 'error' ? ' btn-danger' : 'btn-primary' "
+            class="btn">
+            {{nameStatus == 'completed' ? 'Success' : nameStatus == 'error' ? 'Error' : 'Running...'}}
+        </button>
+    </div>
+</div>

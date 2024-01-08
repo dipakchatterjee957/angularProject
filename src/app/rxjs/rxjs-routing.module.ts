@@ -6,6 +6,8 @@ import { RxjsLandingComponent } from './rxjs-landing/rxjs-landing.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { IntervalTimerComponent } from './interval-timer/interval-timer.component';
 import { OfFromComponent } from './of-from/of-from.component';
+import { ToArrayComponent } from './to-array/to-array.component';
+import { CustomObservableComponent } from './custom-observable/custom-observable.component';
 
 const routes: Routes = [
   {
@@ -15,7 +17,8 @@ const routes: Routes = [
       { path: 'fromEvent', component: FromEventComponent },
       { path: 'intervalTimer', component: IntervalTimerComponent },
       { path: 'ofFrom', component: OfFromComponent },
-
+      { path: 'toArray', component: ToArrayComponent },
+      { path: 'customObservable', component: CustomObservableComponent },
     ]
   },
 ];

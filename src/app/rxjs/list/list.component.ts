@@ -11,6 +11,7 @@ export class ListComponent {
     { routerPath: 'fromEvent', pathName: 'From Event' },
     { routerPath: 'intervalTimer', pathName: 'Interval & Timer' },
     { routerPath: 'ofFrom', pathName: 'Of & From' },
-
+    { routerPath: 'toArray', pathName: 'toArray' },
+    { routerPath: 'customObservable', pathName: 'Custom \n Observable' },
   ]
 }
