@@ -13,5 +13,6 @@ export class ListComponent {
     { routerPath: 'ofFrom', pathName: 'Of & From' },
     { routerPath: 'toArray', pathName: 'toArray' },
     { routerPath: 'customObservable', pathName: 'Custom \n Observable' },
+    { routerPath: 'map', pathName: 'Map' },
   ]
 }

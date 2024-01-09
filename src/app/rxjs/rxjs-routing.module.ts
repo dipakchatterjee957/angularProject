@@ -8,6 +8,7 @@ import { IntervalTimerComponent } from './interval-timer/interval-timer.componen
 import { OfFromComponent } from './of-from/of-from.component';
 import { ToArrayComponent } from './to-array/to-array.component';
 import { CustomObservableComponent } from './custom-observable/custom-observable.component';
+import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
       { path: 'ofFrom', component: OfFromComponent },
       { path: 'toArray', component: ToArrayComponent },
       { path: 'customObservable', component: CustomObservableComponent },
+      { path: 'map', component: MapComponent },
     ]
   },
 ];
