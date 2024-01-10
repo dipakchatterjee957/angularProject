@@ -1,0 +1,64 @@
+<h3>Filter</h3>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">List_1 (Filter by length)</div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                    </tr>
+                    <tr *ngFor="let item of data1">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">List_2 (Filter by gender)</div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                    </tr>
+                    <tr *ngFor="let item of data2">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.gender}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">List_3 (Filter by Nth items)</div>
+            <div class="card-body">
+                <table class="table">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr *ngFor="let item of data3">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.gender}}</td>
+                        <td>{{item.age}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

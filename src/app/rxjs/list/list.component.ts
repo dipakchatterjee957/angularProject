@@ -14,5 +14,8 @@ export class ListComponent {
     { routerPath: 'toArray', pathName: 'toArray' },
     { routerPath: 'customObservable', pathName: 'Custom \n Observable' },
     { routerPath: 'map', pathName: 'Map' },
+    { routerPath: 'pluck', pathName: 'Pluck' },
+    { routerPath: 'filter', pathName: 'Filter' },
+    { routerPath: 'tap', pathName: 'Tap' },
   ]
 }
