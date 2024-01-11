@@ -14,10 +14,11 @@ import { MapComponent } from './map/map.component';
 import { PluckComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
+import { TakeComponent } from './take/take.component';
 
 
 @NgModule({
-  declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent,
+  declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent,
   ],
   imports: [
     CommonModule,

@@ -17,5 +17,6 @@ export class ListComponent {
     { routerPath: 'pluck', pathName: 'Pluck' },
     { routerPath: 'filter', pathName: 'Filter' },
     { routerPath: 'tap', pathName: 'Tap' },
+    { routerPath: 'take', pathName: 'Take' },
   ]
 }
