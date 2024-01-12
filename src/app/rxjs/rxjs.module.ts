@@ -15,11 +15,14 @@ import { PluckComponent } from './pluck/pluck.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
+import { RetryComponent } from './retry/retry.component';
+import { CustomPipe } from '../appPipes/custom.pipe';
 
 
 @NgModule({
-  declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent, ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent,
-  ],
+  declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent,
+    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent,
+    CustomPipe],
   imports: [
     CommonModule,
     RxjsRoutingModule

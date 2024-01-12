@@ -25,6 +25,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { FilterPipe } from './appPipes/filter.pipe';
 import { DirectiveModule } from './appDirective/directive.module';
 import { SharedComponentModule } from './component/shared-component.module';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     // We declare here components, Directives, and pipes in declarations
@@ -54,7 +55,7 @@ import { SharedComponentModule } from './component/shared-component.module';
     AppRoutingModule,
     FormsModule,
     DirectiveModule,
-    SharedComponentModule
+    SharedComponentModule, HttpClientModule
   ],
   providers: [UtilityService],// declare services in providers
   bootstrap: [AppComponent]
