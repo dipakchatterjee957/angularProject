@@ -26,6 +26,7 @@ import { FilterPipe } from './appPipes/filter.pipe';
 import { DirectiveModule } from './appDirective/directive.module';
 import { SharedComponentModule } from './component/shared-component.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PipeModule } from './appPipes/pipe.module';
 @NgModule({
   declarations: [
     // We declare here components, Directives, and pipes in declarations
@@ -45,7 +46,6 @@ import { HttpClientModule } from '@angular/common/http';
     SubjectComponent,
     ViewchildComponent,
     HostlistenerComponent,
-    CustomPipe,
     PipeComponent,
     FilterPipe
   ],
@@ -55,7 +55,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     DirectiveModule,
-    SharedComponentModule, HttpClientModule
+    SharedComponentModule,
+    HttpClientModule,
+    PipeModule
   ],
   providers: [UtilityService],// declare services in providers
   bootstrap: [AppComponent]
