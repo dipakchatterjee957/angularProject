@@ -18,11 +18,12 @@ import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { CustomPipe } from '../appPipes/custom.pipe';
 import { PipeModule } from '../appPipes/pipe.module';
+import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 
 
 @NgModule({
   declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent,
-    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent],
+    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent],
   imports: [
     CommonModule,
     RxjsRoutingModule, PipeModule

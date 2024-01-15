@@ -19,5 +19,6 @@ export class ListComponent {
     { routerPath: 'tap', pathName: 'Tap' },
     { routerPath: 'take', pathName: 'Take' },
     { routerPath: 'retry', pathName: 'Retry' },
+    { routerPath: 'debounceTime', pathName: 'Debounce Time' },
   ]
 }

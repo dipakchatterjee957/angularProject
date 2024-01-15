@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MyContainerComponent } from './myContainer/myContainer.component';
@@ -54,6 +55,7 @@ import { PipeModule } from './appPipes/pipe.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    LoadingBarModule,
     DirectiveModule,
     SharedComponentModule,
     HttpClientModule,

@@ -36,16 +36,20 @@ export class RetryComponent implements OnInit {
           }
         })
       ))
-    ).subscribe(res => {
-      console.log(res);
-      this.tableData = res;
-      this.fetching = false;
-      this.status = 'Data Fetched';
-    }, (err) => {
-      console.log(err);
-      this.tableData = [];
-      this.fetching = false;
-      this.status = 'Problem Fetching Data'
+    ).subscribe({
+      next: (value) => {
+        console.log(value);
+        this.tableData = value;
+        this.fetching = false;
+        this.status = 'Data Fetched';
+      },
+      error: (err) => {
+        console.log(err);
+        this.tableData = [];
+        this.fetching = false;
+        this.status = 'Problem Fetching Data'
+      },
+      complete: () => console.info('complete')
     })
   }
 }

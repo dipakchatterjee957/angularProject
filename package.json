@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@ngx-loading-bar/core": "^6.0.2",
     "@schematics/angular": "^16.0.2",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.5",

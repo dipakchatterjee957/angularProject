@@ -14,6 +14,7 @@ import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
+import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: 'tap', component: TapComponent },
       { path: 'take', component: TakeComponent },
       { path: 'retry', component: RetryComponent },
+      { path: 'debounceTime', component: DebounceTimeComponent },
     ]
   },
 ];
