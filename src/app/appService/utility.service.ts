@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -20,4 +20,7 @@ export class UtilityService {
     el.innerText = val;
     document.getElementById(containerId)?.appendChild(el)
   }
+
+  // This is used for replaySubject component
+  videoEmit = new ReplaySubject<string>(5)
 }

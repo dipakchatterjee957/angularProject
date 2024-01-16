@@ -20,5 +20,6 @@ export class ListComponent {
     { routerPath: 'take', pathName: 'Take' },
     { routerPath: 'retry', pathName: 'Retry' },
     { routerPath: 'debounceTime', pathName: 'Debounce Time' },
+    { routerPath: 'replaySubject', pathName: 'Replay Subject' },
   ]
 }

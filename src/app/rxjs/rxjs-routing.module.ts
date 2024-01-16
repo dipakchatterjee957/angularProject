@@ -15,6 +15,7 @@ import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
+import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,7 @@ const routes: Routes = [
       { path: 'take', component: TakeComponent },
       { path: 'retry', component: RetryComponent },
       { path: 'debounceTime', component: DebounceTimeComponent },
+      { path: 'replaySubject', component: ReplaySubjectComponent },
     ]
   },
 ];
