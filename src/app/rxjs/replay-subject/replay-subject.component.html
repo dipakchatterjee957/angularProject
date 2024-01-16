@@ -1,11 +1,19 @@
 <h3>Replay Subject</h3>
 
-<div class="row justify-content-center">
-    <div class="col-md-4">
-        <input type="text" class="form-control" #myInput>
+<div class="row">
+    <h5>{{methodChange ? 'Add Video' : 'Interval Started'}}</h5>
+    <div *ngIf="methodChange" class="row justify-content-center">
+        <div class="col-md-4">
+            <input type="text" class="form-control" #myInput>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-success" (click)="onAddVideo(myInput.value)">Add Video</button>
+        </div>
     </div>
-    <div class="col-md-3">
-        <button class="btn btn-success" (click)="onAddVideo(myInput.value)">Add Video</button>
+    <div class="col text-right">
+        <button class="btn btn-warning" (click)="toggleMethod()">
+            Toggle Method
+        </button>
     </div>
 </div>
 <hr>
