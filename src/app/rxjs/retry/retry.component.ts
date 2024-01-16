@@ -9,7 +9,7 @@ import { delay, retry, retryWhen, scan } from 'rxjs';
 })
 export class RetryComponent implements OnInit {
 
-  tableData: any;
+  tableData: Array<any> = [];
   fetching: boolean = false;
   status: string = 'No Data';
 
@@ -21,7 +21,7 @@ export class RetryComponent implements OnInit {
   fetchDetails() {
     this.fetching = true;
     this.status = 'Fetching Data ...';
-    this.http.get('https://jsonplaceholder.typicode.com/posts').pipe(
+    this.http.get<any>('https://jsonplaceholder.typicode.com/posts').pipe(
       // retry(3);
       retryWhen(err => err.pipe(
         delay(2000),
