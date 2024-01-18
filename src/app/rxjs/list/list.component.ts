@@ -21,5 +21,6 @@ export class ListComponent {
     { routerPath: 'retry', pathName: 'Retry' },
     { routerPath: 'debounceTime', pathName: 'Debounce Time' },
     { routerPath: 'replaySubject', pathName: 'Replay Subject' },
+    { routerPath: 'asyncSubject', pathName: 'Async Subject' },
   ]
 }

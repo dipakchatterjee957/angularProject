@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
+import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,4 +23,7 @@ export class UtilityService {
 
   // This is used for replaySubject component
   videoEmit = new ReplaySubject<string>(5)
+
+  // This is used for AsyncSubject component
+  itemEmit = new AsyncSubject<string>();
 }
