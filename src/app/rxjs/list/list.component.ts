@@ -22,5 +22,6 @@ export class ListComponent {
     { routerPath: 'debounceTime', pathName: 'Debounce Time' },
     { routerPath: 'replaySubject', pathName: 'Replay Subject' },
     { routerPath: 'asyncSubject', pathName: 'Async Subject' },
+    { routerPath: 'concatMerge', pathName: 'Concat Merge' },
   ]
 }

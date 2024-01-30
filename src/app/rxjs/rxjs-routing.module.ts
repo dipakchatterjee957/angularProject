@@ -17,6 +17,7 @@ import { RetryComponent } from './retry/retry.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,7 @@ const routes: Routes = [
       { path: 'debounceTime', component: DebounceTimeComponent },
       { path: 'replaySubject', component: ReplaySubjectComponent },
       { path: 'asyncSubject', component: AsyncSubjectComponent },
+      { path: 'concatMerge', component: ConcatMergeComponent },
     ]
   },
 ];

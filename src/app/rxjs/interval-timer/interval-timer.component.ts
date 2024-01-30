@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription, interval, timer } from 'rxjs';
 import { UtilityService } from 'src/app/appService/utility.service';
 
@@ -7,7 +7,7 @@ import { UtilityService } from 'src/app/appService/utility.service';
   templateUrl: './interval-timer.component.html',
   styleUrls: ['./interval-timer.component.css']
 })
-export class IntervalTimerComponent implements OnInit {
+export class IntervalTimerComponent implements OnInit, OnDestroy {
 
   message: string;
   videoSubscription_1: Subscription;
@@ -38,5 +38,10 @@ export class IntervalTimerComponent implements OnInit {
         this.videoSubscription_2.unsubscribe();
       }
     })
+  }
+
+  ngOnDestroy(): void {
+    this.videoSubscription_1.unsubscribe();
+    this.videoSubscription_2.unsubscribe();
   }
 }

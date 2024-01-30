@@ -20,11 +20,12 @@ import { PipeModule } from '../appPipes/pipe.module';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
+import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 
 
 @NgModule({
   declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent,
-    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent],
+    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent],
   imports: [
     CommonModule,
     RxjsRoutingModule, PipeModule
