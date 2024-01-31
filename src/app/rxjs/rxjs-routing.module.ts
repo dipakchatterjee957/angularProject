@@ -18,6 +18,8 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
 
 const routes: Routes = [
   {
@@ -39,6 +41,8 @@ const routes: Routes = [
       { path: 'replaySubject', component: ReplaySubjectComponent },
       { path: 'asyncSubject', component: AsyncSubjectComponent },
       { path: 'concatMerge', component: ConcatMergeComponent },
+      { path: 'mergeMap', component: MergeMapComponent },
+      { path: 'concatMap', component: ConcatMapComponent },
     ]
   },
 ];

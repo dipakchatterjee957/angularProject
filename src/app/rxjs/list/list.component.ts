@@ -23,5 +23,7 @@ export class ListComponent {
     { routerPath: 'replaySubject', pathName: 'Replay Subject' },
     { routerPath: 'asyncSubject', pathName: 'Async Subject' },
     { routerPath: 'concatMerge', pathName: 'Concat Merge' },
+    { routerPath: 'mergeMap', pathName: 'Merge Map' },
+    { routerPath: 'concatMap', pathName: 'Concat Map' },
   ]
 }

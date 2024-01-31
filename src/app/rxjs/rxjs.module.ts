@@ -21,11 +21,13 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { ReplaySubjectComponent } from './replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
 
 
 @NgModule({
   declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent,
-    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent],
+    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent, MergeMapComponent, ConcatMapComponent],
   imports: [
     CommonModule,
     RxjsRoutingModule, PipeModule
