@@ -21,6 +21,13 @@ export class UtilityService {
     document.getElementById(containerId)?.appendChild(el)
   }
 
+  printItem(val: string | any, containerId: string) {
+    let el = document.createElement('div');
+    el.setAttribute('class', 'item');
+    el.innerHTML = val;
+    document.getElementById(containerId)?.prepend(el)
+  }
+
   // This is used for replaySubject component
   videoEmit = new ReplaySubject<string>(5)
 
