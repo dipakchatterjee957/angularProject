@@ -25,5 +25,7 @@ export class ListComponent {
     { routerPath: 'concatMerge', pathName: 'Concat Merge' },
     { routerPath: 'mergeMap', pathName: 'Merge Map' },
     { routerPath: 'concatMap', pathName: 'Concat Map' },
+    { routerPath: 'switchMap', pathName: 'Switch Map' },
+    { routerPath: 'switchMapSearch', pathName: 'Switch Map Search' },
   ]
 }

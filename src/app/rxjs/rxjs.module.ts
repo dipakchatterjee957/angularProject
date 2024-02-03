@@ -23,13 +23,17 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { SwitchMapSearchComponent } from './switch-map-search/switch-map-search.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent,
-    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent, MergeMapComponent, ConcatMapComponent],
+    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent, MergeMapComponent, ConcatMapComponent, SwitchMapComponent, SwitchMapSearchComponent],
   imports: [
     CommonModule,
+    FormsModule,
     RxjsRoutingModule, PipeModule
   ],
   exports: [PromiseComponent]

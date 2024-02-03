@@ -20,6 +20,8 @@ import { AsyncSubjectComponent } from './async-subject/async-subject.component';
 import { ConcatMergeComponent } from './concat-merge/concat-merge.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { SwitchMapSearchComponent } from './switch-map-search/switch-map-search.component';
 
 const routes: Routes = [
   {
@@ -43,6 +45,8 @@ const routes: Routes = [
       { path: 'concatMerge', component: ConcatMergeComponent },
       { path: 'mergeMap', component: MergeMapComponent },
       { path: 'concatMap', component: ConcatMapComponent },
+      { path: 'switchMap', component: SwitchMapComponent },
+      { path: 'switchMapSearch', component: SwitchMapSearchComponent },
     ]
   },
 ];

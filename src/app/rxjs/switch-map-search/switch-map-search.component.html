@@ -1,0 +1,38 @@
+<h3>Switch Map Search</h3>
+
+<h5>Search Videos</h5>
+
+<form>
+    <div class="mt-3">
+        <input type="text" name="searchTerm" required [(ngModel)]="ngForm" #searchForm="ngModel" autocomplete="off"
+            class="form-control form-control-lg">
+    </div>
+</form>
+<br>
+<hr><br>
+<div class="results" *ngIf="searchResult.length">
+    <div class="d-flex justify-content-between">
+        <h5>Search Results</h5>
+        <span class="text-auto"> {{searchResult.length}} Results found..</span>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Thumbnail</th>
+                <th scope="col">Title & Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of searchResult;index as i">
+                <th>{{i+1}}</th>
+                <td><img src={{item.thumb}} alt="" width="120"></td>
+                <td>
+                    <strong>{{item.title}}</strong>
+                    <p>{{item.description}}</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
