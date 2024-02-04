@@ -27,5 +27,6 @@ export class ListComponent {
     { routerPath: 'concatMap', pathName: 'Concat Map' },
     { routerPath: 'switchMap', pathName: 'Switch Map' },
     { routerPath: 'switchMapSearch', pathName: 'Switch Map Search' },
+    { routerPath: 'exhaustMap', pathName: 'Exhaust Map' },
   ]
 }
