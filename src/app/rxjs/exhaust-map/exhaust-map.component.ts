@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExhaustMapComponent implements OnInit {
 
   num: number = 0;
-  url: string = 'assets/data.json';
+  url: string = 'http://localhost:3000/list/ddd9';
 
   constructor(private http: HttpClient) { }
 
@@ -24,7 +24,11 @@ export class ExhaustMapComponent implements OnInit {
     this.onSave(this.num++).subscribe(res => {
       console.log(res);
     })
-    // this.http.get(this.url).subscribe(res => {
+    // this.http.get('http://localhost:3000/list', { observe: 'body' })
+    //   .subscribe(result => {
+    //     console.log(result);
+    //   });
+    // this.http.put('http://localhost:3000/list/ddd9', { data: this.num++ }).subscribe(res => {
     //   console.log(res)
     // })
   }
