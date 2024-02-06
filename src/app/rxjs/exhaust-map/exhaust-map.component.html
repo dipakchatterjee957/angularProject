@@ -5,8 +5,11 @@
         <div class="card">
             <div class="card-header">Add Video</div>
             <div class="card-body">
-                <button #addBtn class="btn btn-primary" (click)="btnClick()">
+                <button class="btn btn-primary" #btn> <!-- (click)="btnClick()" -->
                     Add
+                </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-primary" (click)="resetBtn()">
+                    Reset
                 </button>
             </div>
         </div>
@@ -15,7 +18,8 @@
         <div class="card">
             <div class="card-header">List</div>
             <div class="card-body">
-                <ul id="container1">Item : {{num}}</ul>
+                <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <ul id="container1">Item : {{result}}</ul>
             </div>
         </div>
     </div>
