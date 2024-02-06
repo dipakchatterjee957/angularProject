@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exhaust-map.component.css']
 })
 export class ExhaustMapComponent implements OnInit {
-
+  // To run json server D:\angularProject\src\assets\json>npx json-server --watch db.json
   num: number = 0;
   url: string = 'http://localhost:3000/list/ddd9';
 
