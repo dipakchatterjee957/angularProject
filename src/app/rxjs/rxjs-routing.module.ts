@@ -23,6 +23,7 @@ import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { SwitchMapSearchComponent } from './switch-map-search/switch-map-search.component';
 import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
+import { CombinelatestWithlatestfromComponent } from './combinelatest-withlatestfrom/combinelatest-withlatestfrom.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,7 @@ const routes: Routes = [
       { path: 'switchMap', component: SwitchMapComponent },
       { path: 'switchMapSearch', component: SwitchMapSearchComponent },
       { path: 'exhaustMap', component: ExhaustMapComponent },
+      { path: 'combinelatestWithlatestfrom', component: CombinelatestWithlatestfromComponent },
     ]
   },
 ];
