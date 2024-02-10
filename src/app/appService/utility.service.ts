@@ -1,5 +1,6 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
+import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -33,4 +34,16 @@ export class UtilityService {
 
   // This is used for AsyncSubject component
   itemEmit = new AsyncSubject<string>();
+
+  // CatchError & ThrowError
+  handelError(err: HttpErrorResponse) {
+    console.log(err)
+    let errMsg = '';
+    if (!err.error || !err.error.error) {
+      errMsg = 'NetWork Error, Please check';
+    } else {
+      errMsg = 'Other type error';
+    }
+    return throwError(() => errMsg)
+  }
 }

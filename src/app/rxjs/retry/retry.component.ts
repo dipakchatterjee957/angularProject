@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { delay, retry, retryWhen, scan } from 'rxjs';
+import { catchError, delay, retry, retryWhen, scan } from 'rxjs';
+import { UtilityService } from 'src/app/appService/utility.service';
 
 @Component({
   selector: 'app-retry',
@@ -12,8 +13,9 @@ export class RetryComponent implements OnInit {
   tableData: Array<any> = [];
   fetching: boolean = false;
   status: string = 'No Data';
+  errorMsg: string;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public _utility: UtilityService) { }
 
   ngOnInit(): void {
   }
@@ -35,7 +37,8 @@ export class RetryComponent implements OnInit {
             this.status = 'Retrying Attempt # ' + index;
           }
         })
-      ))
+      )),
+      catchError(this._utility.handelError)
     ).subscribe({
       next: (value) => {
         console.log(value);
@@ -45,6 +48,7 @@ export class RetryComponent implements OnInit {
       },
       error: (err) => {
         console.log(err);
+        this.errorMsg = err;
         this.tableData = [];
         this.fetching = false;
         this.status = 'Problem Fetching Data'

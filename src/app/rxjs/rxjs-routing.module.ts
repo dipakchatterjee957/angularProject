@@ -24,6 +24,7 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { SwitchMapSearchComponent } from './switch-map-search/switch-map-search.component';
 import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
 import { CombinelatestWithlatestfromComponent } from './combinelatest-withlatestfrom/combinelatest-withlatestfrom.component';
+import { ShareReplayComponent } from './share-replay/share-replay.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,7 @@ const routes: Routes = [
       { path: 'switchMap', component: SwitchMapComponent },
       { path: 'switchMapSearch', component: SwitchMapSearchComponent },
       { path: 'exhaustMap', component: ExhaustMapComponent },
+      { path: 'shareReplay', component: ShareReplayComponent },
       { path: 'combinelatestWithlatestfrom', component: CombinelatestWithlatestfromComponent },
     ]
   },

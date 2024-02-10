@@ -1,5 +1,5 @@
-<h3>Retry, RetryWhen, Scan & Delay</h3>
-
+<h3>Retry, RetryWhen, Scan , Delay & ThrowError , CatchError</h3>
+<br>
 <div class="row">
     <div class="col-md-6">
         <button class="btn btn-primary" type="button" (click)="fetchDetails()" d>
@@ -11,6 +11,9 @@
             'text-success': status == 'Data Fetched',
             'text-danger': status == 'Problem Fetching Data'
         }">{{status}}</strong></p>
+        <div *ngIf="errorMsg" class="alert alert-danger" role="alert">
+            {{errorMsg}}
+        </div>
     </div>
     <div class="col-md-6">
         <table class="table">
