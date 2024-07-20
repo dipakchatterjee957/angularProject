@@ -48,11 +48,11 @@ export class DebounceTimeComponent implements OnInit, AfterViewInit {
     searchTerm2.subscribe(res => {
       console.log(res);
       this.myInputText2 = res;
-      this.loadingBar.start();
+      this.loadingBar.useRef().start();
 
       setTimeout(() => {
         this.myInputText2 = null;
-        this.loadingBar.stop();
+        this.loadingBar.useRef().stop();
       }, 2000);
     })
   }
