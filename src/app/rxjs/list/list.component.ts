@@ -28,5 +28,7 @@ export class ListComponent {
     { routerPath: 'switchMap', pathName: 'Switch Map' },
     { routerPath: 'switchMapSearch', pathName: 'Switch Map Search' },
     { routerPath: 'exhaustMap', pathName: 'Exhaust Map' },
+    { routerPath: 'shareReplay', pathName: 'ShareReplay' },
+    { routerPath: 'combinelatestWithlatestfrom', pathName: 'Combinelatest - Withlatestfrom' },
   ]
 }

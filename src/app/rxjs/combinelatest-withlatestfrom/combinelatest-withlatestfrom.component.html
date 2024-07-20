@@ -1,0 +1,39 @@
+<h3>Combinelatest - Withlatestfrom</h3>
+
+<div class="row">
+    <div class="col-md-3 pr-4">
+        <strong>Name</strong>
+        <hr>
+        <select class="form-control" #name>
+            <option *ngFor="let item of nameList" value="{{item}}">
+                {{item}}
+            </option>
+        </select>
+        <br>
+        <br>
+        <strong>Color</strong>
+        <hr>
+        <select class="form-control" #color>
+            <option *ngFor="let item of colorList" value="{{item}}">
+                {{item}}
+            </option>
+        </select>
+    </div>
+    <div class="col-md-9 ml-auto">
+        <strong>Combinelatest(Change any dropdown value it will trigger)</strong>
+        <hr>
+        <div class="wrapper" id="container1"></div>
+        <br>
+        <strong>Withlatestfrom(only trigger change in master dropdown value )</strong>
+        <hr>
+        <div class="wrapper" id="container2"></div>
+        <br>
+        <strong>Zip(if both dorpdown value change then trigger)</strong>
+        <hr>
+        <div class="wrapper" id="container3"></div>
+        <br>
+        <strong>ForkJoin (when observale end then trigger and emit last value</strong>
+        <hr>
+        <div class="wrapper" id="container4"></div>
+    </div>
+</div>

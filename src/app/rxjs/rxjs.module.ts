@@ -27,11 +27,13 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { SwitchMapSearchComponent } from './switch-map-search/switch-map-search.component';
 import { FormsModule } from '@angular/forms';
 import { ExhaustMapComponent } from './exhaust-map/exhaust-map.component';
+import { CombinelatestWithlatestfromComponent } from './combinelatest-withlatestfrom/combinelatest-withlatestfrom.component';
+import { ShareReplayComponent } from './share-replay/share-replay.component';
 
 
 @NgModule({
   declarations: [PromiseComponent, ListComponent, RxjsLandingComponent, FromEventComponent, IntervalTimerComponent, OfFromComponent,
-    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent, MergeMapComponent, ConcatMapComponent, SwitchMapComponent, SwitchMapSearchComponent, ExhaustMapComponent],
+    ToArrayComponent, CustomObservableComponent, MapComponent, PluckComponent, FilterComponent, TapComponent, TakeComponent, RetryComponent, DebounceTimeComponent, ReplaySubjectComponent, AsyncSubjectComponent, ConcatMergeComponent, MergeMapComponent, ConcatMapComponent, SwitchMapComponent, SwitchMapSearchComponent, ExhaustMapComponent, CombinelatestWithlatestfromComponent, ShareReplayComponent],
   imports: [
     CommonModule,
     FormsModule,
