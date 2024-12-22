@@ -41,4 +41,6 @@ import { ShareReplayComponent } from './share-replay/share-replay.component';
   ],
   exports: [PromiseComponent]
 })
-export class RxjsModule { }
+export class RxjsModule {
+  constructor() { console.log('RxjsModule loaded') }
+}

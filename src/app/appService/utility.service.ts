@@ -30,7 +30,7 @@ export class UtilityService {
   }
 
   // This is used for replaySubject component
-  videoEmit = new ReplaySubject<string>(5)
+  videoEmit = new ReplaySubject<string>(3)
 
   // This is used for AsyncSubject component
   itemEmit = new AsyncSubject<string>();
